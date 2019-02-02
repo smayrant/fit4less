@@ -1,7 +1,19 @@
-.class-img{
+@import "./variables";
+
+.thumbnail{
     position: relative;
 }
 
 .course-status{
     position: absolute;
+    bottom: 105px;
+    left: 25px;
+    color: #fff;
+    background: $main-blue;
+    padding: 12px 18px;
 }
+
+.course-text{
+    margin-top: 3px;
+}
+

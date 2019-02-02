@@ -1,0 +1,17 @@
+@import "./variables";
+
+.bmi-section{
+    background-color: $main-blue;
+    padding: 5em;
+}
+
+.bmi-title{
+    color: #fff;
+}
+
+.calculate-btn{
+    background: #fff;
+    color: $main-blue;
+    padding: .375em 1.5em;
+    border-radius: 15px;
+}
