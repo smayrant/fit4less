@@ -17,33 +17,21 @@
 <body>
     <section class="nav-section">
         <div class="container">
-            <div class="d-flex justify-content-between">
-                <div class="p-2">Flex item</div>
-                <div class="p-2">Flex item</div>
-                <div class="p-2">Flex item</div>
-            </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class="">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trainers</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Home</a>
+                        <a class="nav-item nav-link" href="#">Features</a>
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <a class="nav-item nav-link" href="#">Pricing</a>
+                        <a class="nav-item nav-link" href="#">Disabled</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </section>
     <section class="carousel-section mb-5">
@@ -188,15 +176,15 @@
                     <h1 class="bmi-title text-capitalize">calculate your body mass index</h1>
                 </div>
             </div>
-            <div class="row mt-5 d-flex justify-content-center mx-auto">
-                <div class="col-lg-3">
+            <div class="row mt-5 justify-content-center align-items-start">
+                <div class="col-lg-3 mb-1">
                     <form>
                         <div class="form-group">
                             <input type="input" class="form-control" aria-describedby="weight" placeholder="Enter Your Weight (LBS)">
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 mb-1">
                     <form>
                         <div class="form-group">
                             <input type="input" class="form-control" aria-describedby="height" placeholder="Enter Your Height (Inches)">
@@ -204,49 +192,50 @@
                     </form>
                 </div>
                 <div class="col-lg-3">
-                    <button type="submit" class="font-weight-bold calculate-btn btn">Calculate Your BMI</button>
+                    <button type="submit" class=" text-left font-weight-bold calculate-btn btn">Calculate Your BMI</button>
                 </div>
             </div>
         </div>
     </section>
     <section class="mt-5 mb-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
+            <div class="row d-flex mx-auto justify-content-center">
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="card-header">Basic Membership</div>
                         <div class="card-body">
                             <h3 class="card-title">$15 Monthly</h3>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>Unlimited Access to One Club of Your Choice</li>
+                                <li>Free Wifi Access</li>
+                                <li>1 Free Personal Training Session</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-lg-4 mb-5">
+                    <div class="card" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="card-header">Premium Membership</div>
                         <div class="card-body">
                             <h3 class="card-title">$25 Monthly</h3>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>All Benefits of the Basic Membership</li>
+                                <li>Access to a Custom Workout App</li>
+                                <li>5 Free Personal Training Sessions</li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
+                <div class="col-lg-4 ">
+                    <div class="card" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="card-header">Ultimate Membership</div>
                         <div class="card-body">
                             <h3 class="card-title">$35 Monthly</h3>
                             <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>All Benefits of the Premium Membership</li>
+                                <li>Free Personalized Fitness Plan</li>
+                                <li>Free Access to Both Gym Locations</li>
+                                <li>Bring a Guest Anytime</li>
                             </ul>
                         </div>
                     </div>
@@ -254,12 +243,50 @@
             </div>
         </div>
     </section>
-    <main role="main" class="container">
+    <section class="trainer-section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="title text-center">
+                    <h1 class="text-capitalize">our experienced trainers</h1>
+                    <p class="text-capitalize">choose from one of our highly knowledgeable trainers to help your fitness dreams come true</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo1.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 font-weight-bold">Eric Michaels</h4>
+                    <p>Weight Training Instructor</p>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo2.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 font-weight-bold">Julio Dominguez</h4>
+                    <p>Boxing Instructor</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo3.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 font-weight-bold">Samantha Andrews</h4>
+                    <p>Body Weight Trainer</p>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo4.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 font-weight-bold">Samuel Daniels</h4>
+                    <p>Cross Training Instructor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section mt-5">
+        <div class="container-fluid">
+            <div class="row cta-row cta-row2">
+                <div class="text-center text-white col-lg-12">
+                    <h6 class="">book an appointment</h6>
+                    <h1 class="">get into shape now</h1>
+                    <button type="button" class="btn">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-
-    </main>
-    <!-- /.container -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
