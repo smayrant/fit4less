@@ -11,28 +11,39 @@
     <meta name="msapplication-navbutton-color" content="#5352ed">
     <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 </head>
 
 <body>
     <section class="nav-section">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                    <img class="logo" src="<%= require('./src/assets/running.png')%>" style="height: auto; width: 80px;" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Home</a>
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
-                        <a class="nav-item nav-link" href="#">Disabled</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offer-section">What We Offer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#classes">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#memerships">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trainers">Trainers</a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </div>
+
     </section>
     <section class="carousel-section mb-5">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -60,7 +71,7 @@
             </a>
         </div>
     </section>
-    <section class="mt-5 mb-5 what-we-offer-section">
+    <section class="mt-5 mb-5 what-we-offer-section" id="offer-section">
         <div class="container">
             <div class="title text-center">
                 <h1>What we offer</h1>
@@ -89,14 +100,14 @@
         <div class="container-fluid">
             <div class="row cta-row">
                 <div class="text-center text-white col-lg-12">
-                    <h6 class="">book an appointment</h6>
-                    <h1 class="">get into shape now</h1>
+                    <h6 class="">Book an Appointment</h6>
+                    <h1 class="text-capitalize">get into shape now</h1>
                     <button type="button" class="btn">Book Now</button>
                 </div>
             </div>
         </div>
     </section>
-    <section class="classes-section">
+    <section class="classes-section" id="classes">
         <div class="container">
             <div class="row d-flex justify-content-center mb-5">
                 <div class="title text-center">
@@ -197,7 +208,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-5 mb-5">
+    <section class="mt-5 mb-5 membership-section" id="memberships">
         <div class="container">
             <div class="row d-flex mx-auto justify-content-center">
                 <div class="col-lg-4 mb-5">
@@ -206,7 +217,7 @@
                         <div class="card-body">
                             <h3 class="card-title">$15 Monthly</h3>
                             <ul>
-                                <li>Unlimited Access to One Club of Your Choice</li>
+                                <li>Unlimited Access to Our Club</li>
                                 <li>Free Wifi Access</li>
                                 <li>1 Free Personal Training Session</li>
                             </ul>
@@ -234,7 +245,7 @@
                             <ul>
                                 <li>All Benefits of the Premium Membership</li>
                                 <li>Free Personalized Fitness Plan</li>
-                                <li>Free Access to Both Gym Locations</li>
+                                <li>Extended Before and After Hours</li>
                                 <li>Bring a Guest Anytime</li>
                             </ul>
                         </div>
@@ -243,7 +254,33 @@
             </div>
         </div>
     </section>
-    <section class="trainer-section">
+    <section class="partnership-section">
+        <div class="container">
+            <div class="row mt-5 d-flex justify-content-center">
+                <div class="title text-center">
+                    <h1 class="text-capitalize">our featured partners</h1>
+                </div>
+            </div>
+            <div class="row mb-5 d-flex flex-wrap">
+                <a class="col" href="">
+                    <img class="img-fluid" src="<%= require('./src/assets/partner-logo1.jpg')%>" alt="parner logo">
+                </a>
+                <a class="col" href="">
+                    <img class="img-fluid" src="<%= require('./src/assets/partner-logo2.jpg')%>" alt="parner logo">
+                </a>
+                <a class="col" href="">
+                    <img class="img-fluid" src="<%= require('./src/assets/partner-logo3.jpg')%>" alt="parner logo">
+                </a>
+                <a class="col" href="">
+                    <img class="img-fluid" src="<%= require('./src/assets/partner-logo4.jpg')%>" alt="parner logo">
+                </a>
+                <a class="col" href="">
+                    <img class="img-fluid" src="<%= require('./src/assets/partner-logo5.jpg')%>" alt="parner logo">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="trainer-section" id="trainers">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
@@ -275,13 +312,52 @@
             </div>
         </div>
     </section>
-    <section class="cta-section mt-5">
+    <section class="cta-section2 mt-5">
         <div class="container-fluid">
-            <div class="row cta-row cta-row2">
+            <div class="row cta-row2">
                 <div class="text-center text-white col-lg-12">
-                    <h6 class="">book an appointment</h6>
-                    <h1 class="">get into shape now</h1>
-                    <button type="button" class="btn">Book Now</button>
+                    <h1 class="mb-4">Join Us Today!</h1>
+                    <button type="button" class="btn">Become a Member</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col text-center mb-5">
+                    logo here
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <p>
+                            4570 Hewes Avenue
+                            <br> Bel Air, MD 21014
+                            <br> 443-675-8524
+                        </p>
+                        <p>getfit@fit4less.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <p>Fit4Less is a local gym centered around helping you to achieve your fitness goals through our equipment,
+                            amenities and support</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="footer-column">
+                        <h4>Newsletter</h4>
+                        <p>Sign up here to subscribe to our newsletter. No spam, ever!</p>
+                        <form class="form-inline">
+                            <label class="sr-only" for="inlineFormInputName2">Email</label>
+                            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Email Address">
+                            <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
