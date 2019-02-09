@@ -7,4 +7,10 @@ import jquery from 'jquery';
 
 jquery(() => {
     console.log('Hello jQuery + bootstrap 4!');
+    const btn = document.getElementsByClassName("calculate-btn");
+    function calculate() {
+        console.log('clicked')
+    }
+
+    btn.addEventListener("click", calculate)
 });
