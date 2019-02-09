@@ -1,14 +1,33 @@
+.nav-section{
+  background: #333;
+}
+
+.navbar{
+  padding: .5em 0;
+}
+
 .nav-item{
     font-size: 1.4rem;
     padding-left: 1.9rem !important;
 }
 
 .nav-link{
-  color: #333 !important;
+  color: #fff !important;
   font-weight: 400;
 }
 
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(44, 117, 210)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.logo{
+  width: 90px;
+  @media only screen and (max-width: 576px) {
+      width: 60px !important;
+  }
+  
+  @media only screen and (max-width: 375px) {
+      width: 45px !important;
+  }
 }
 

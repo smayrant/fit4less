@@ -4,6 +4,14 @@
     background: url("https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
     padding: 10em;
     background-size: cover;
+
+    @media only screen and (max-width: 576px) {
+        padding: 5em;
+    }  
+
+    @media only screen and (max-width: 400px) {
+        padding: 3.5em;
+    }   
 }
 
 .btn{

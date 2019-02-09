@@ -1,5 +1,13 @@
 .cta-row2{
     background: url("https://images.pexels.com/photos/703014/pexels-photo-703014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") !important;
     padding: 10em;
-    background-size: cover;
+    background-size: cover !important;
+
+     @media only screen and (max-width: 576px) {
+        padding: 5em;
+    }  
+
+    @media only screen and (max-width: 400px) {
+        padding: 3.5em;
+    } 
 }
