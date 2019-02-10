@@ -2,18 +2,22 @@
   background: #333;
 }
 
-.navbar{
-  padding: .5em 0;
+.nav{
+  position: relative;
+}
+
+.navbar-brand{
+  position: absolute;
 }
 
 .nav-item{
     font-size: 1.4rem;
-    padding-left: 1.9rem !important;
+    padding-left: 2.5rem !important;
 }
 
 .nav-link{
   color: #fff !important;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .navbar-toggler-icon {

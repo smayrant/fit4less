@@ -16,34 +16,31 @@
 
 <body>
     <section class="nav-section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="#">
-                    <img class="logo" src="<%= require('./src/assets/running.png')%>" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#offer-section">What We Offer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#classes">Classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#memerships">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#trainers">Trainers</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand pl-5" href="#">
+                <img class="logo" src="<%= require('./src/assets/running.png')%>" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto pr-5 text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offer-section">What We Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#memerships">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trainers">Trainers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </section>
     <section class="carousel-section mb-5">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -78,20 +75,38 @@
                 <p>Care, Concern, and Quality Above All</p>
             </div>
             <div class="row">
-                <div class="col-md-4">
-                    <p class="text-center">img</p>
-                    <h6 class="text-center">title here</h6>
-                    <p class="text-center">some lorem ipsum text goes here some lorem ipsum text goes here</p>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <img class="img-fluid" src="<%= require('./src/assets/networking.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">Inclusivity</h4>
+                    <p class="">No judgements here, ever! Come as you are and exercise as you see fit!</p>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-center">img</p>
-                    <h6 class="text-center">title here</h6>
-                    <p class="text-center">some lorem ipsum text goes here some lorem ipsum text goes here</p>
+                <div class="col-lg-4 col-md-6 text-center">
+                    <img class="img-fluid" style="height: 128px;" src="<%= require('./src/assets/coach.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">Encouragement</h4>
+                    <p class="">Fit4Less is here to provide positivity and encouragement to ensure that you reach your fitness goals.</p>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-center">img</p>
-                    <h6 class="text-center">title here</h6>
-                    <p class="text-center">some lorem ipsum text goes here some lorem ipsum text goes here </p>
+                <div class="col-lg-4 col-md-6 mtext-center">
+                    <img class="img-fluid" src="<%= require('./src/assets/laugh.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">Fun</h4>
+                    <p class="">We know fitness can seem a little serious at times but Fit4Less makes getting in shape fun! </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5 text-center">
+                    <img class="img-fluid" src="<%= require('./src/assets/slim.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">Personal Training</h4>
+                    <p class="">No matter where you are in your fitness journey you'll receive a highly certified personal trainer to
+                        achieve your goals</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5 text-center">
+                    <img class="img-fluid" src="<%= require('./src/assets/gym-machine.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">State-of-the-Art Equipment</h4>
+                    <p class="">Never worry about whether or not you're using the most advanced gym equipment available because at Fit4Less,
+                        you are. </p>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-5 text-center">
+                    <img class="img-fluid" style="height: 128px;" src="<%= require('./src/assets/shoes.png')%>" alt="parner logo">
+                    <h4 class="mt-3 font-weight-bold">Group Exercise Classes</h4>
+                    <p class="">Enjoy a group of fitness classes centered around being convenient, engaging, and effective in helping
+                        you reach your goals.</p>
                 </div>
             </div>
         </div>
@@ -120,7 +135,7 @@
                     <div class="thumbnail">
                         <img class="img-fluid" src="<%= require('./src/assets/class-img1.jpeg')%>" alt="class image">
                     </div>
-                    <span class="course-status class-img">Course Available</span>
+                    <span class="class-status class-img">Class Available</span>
                     <div class="d-flex mt-2">
                         <h5 class="text-capitalize">yoga classes</h5>
                         <h5 class="class-price ml-auto">$35</h5>
@@ -128,9 +143,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img2.jpeg')%>" alt="class image">
+                        <img class="img-fluid" src="<%= require('./src/assets/class-img2.jpeg')%>" alt="Class image">
                     </div>
-                    <span class="course-status class-img">Course Available</span>
+                    <span class="class-status class-img">class Available</span>
                     <div class="d-flex mt-2">
                         <h5 class="text-capitalize">jazzercise classes</h5>
                         <h5 class="class-price ml-auto">$25</h5>
@@ -138,9 +153,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img3.jpeg')%>" alt="class image">
+                        <img class="img-fluid" src="<%= require('./src/assets/class-img3.jpeg')%>" alt="Class image">
                     </div>
-                    <span class="course-status class-img">Course Available</span>
+                    <span class="class-status class-img">class Available</span>
                     <div class="d-flex mt-2">
                         <h5 class="text-capitalize">body strength classes</h5>
                         <h5 class="class-price ml-auto">$25</h5>
@@ -148,9 +163,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img4.jpeg')%>" alt="class image">
+                        <img class="img-fluid" src="<%= require('./src/assets/class-img4.jpeg')%>" alt="Class image">
                     </div>
-                    <span class="course-status bottom-course-status class-img">Course Available</span>
+                    <span class="class-status bottom-class-status class-img">class Available</span>
                     <div class="d-flex mt-2">
                         <h5 class="text-capitalize">rowing classes</h5>
                         <h5 class="class-price ml-auto">$30</h5>
@@ -158,9 +173,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img5.jpeg')%>" alt="class image">
+                        <img class="img-fluid" src="<%= require('./src/assets/class-img5.jpeg')%>" alt="Class image">
                     </div>
-                    <span class="course-status bottom-course-status class-img">Course Available</span>
+                    <span class="class-status bottom-class-status class-img">class Available</span>
                     <div class="d-flex mt-2">
                         <h5 class="text-capitalize">aerobic classes</h5>
                         <h5 class="class-price ml-auto">$30</h5>
@@ -168,11 +183,11 @@
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img6.jpeg')%>" alt="class image">
+                        <img class="img-fluid" src="<%= require('./src/assets/class-img6.jpeg')%>" alt="Class image">
                     </div>
-                    <span class="course-status bottom-course-status class-img">Course Available</span>
+                    <span class="class-status bottom-class-status class-img">class Available</span>
                     <div class="d-flex mt-2">
-                        <h5 class="text-capitalize course-text">sweat it out classes</h5>
+                        <h5 class="text-capitalize class-text">sweat it out classes</h5>
                         <h5 class="class-price  ml-auto">$30</h5>
                     </div>
                     <div></div>

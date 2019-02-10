@@ -41,7 +41,6 @@ function calculateBMI(e) {
         const dividedWeight = parsedWeight / multipliedHeight;
         const bmi = dividedWeight * 703;
         document.querySelector(".bmi-output").value = bmi.toFixed(2);
-
     }
 }
 
