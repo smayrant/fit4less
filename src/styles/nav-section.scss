@@ -1,23 +1,24 @@
 .nav-section{
-  background: #333;
+  background: #5D32D6;
 }
 
 .nav{
-  position: relative;
-}
-
-.navbar-brand{
   position: absolute;
 }
 
+.navbar-brand{
+  position: relative;
+}
+
 .nav-item{
-    font-size: 1.4rem;
+    font-size: 1.2em;
     padding-left: 2.5rem !important;
 }
 
 .nav-link{
   color: #fff !important;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: .8em;
 }
 
 .navbar-toggler-icon {
