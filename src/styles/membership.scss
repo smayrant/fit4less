@@ -1,9 +1,24 @@
+@import "./global";
+
+.membership-section{
+    margin-top: 6em !important;
+}
+
 ul{
     padding: 0;
 }
 
 .benefits-ul li{
     list-style: none;
-    padding-bottom: 1.5em;
+    padding-bottom: 1.8em;
     color: #777777;
+}
+
+.membership-price{
+    color: $main-blue;
+}
+
+.membership-container{
+    box-shadow: 0px 6px 35px -6px rgba(0,0,0,0.22);
+    min-height: 446px !important;
 }

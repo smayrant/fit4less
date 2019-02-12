@@ -2,7 +2,15 @@ body{
     font-family: 'Roboto', sans-serif !important;
 }
 
-// main base color
+.container{
+    @media screen and (min-width: 1500px) {
+        max-width: 1500px !important;
+        
+    }
+}
+
+// base colors
+$main-color: #224A82;
 $main-blue: #2c75d2;
 
 // stylings to darken the call to action and carousel images
@@ -18,4 +26,12 @@ $main-blue: #2c75d2;
     right: 0;
     bottom: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+}
+
+.grey-text{
+    color: #777777;
+}
+
+.dark-grey-text{
+    color: #333333;
 }

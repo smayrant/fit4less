@@ -1,24 +1,38 @@
+@import "./global";
+
 .nav-section{
-  background: #5D32D6;
-}
-
-.nav{
-  position: absolute;
-}
-
-.navbar-brand{
-  position: relative;
+  background: $main-color;
 }
 
 .nav-item{
-    font-size: 1.2em;
-    padding-left: 2.5rem !important;
+  font-size: 1.2em;
+  margin-left: 2.5rem !important;
+  position: relative;
 }
 
 .nav-link{
   color: #fff !important;
   font-weight: 400;
   font-size: .8em;
+}
+
+.nav-link:hover{
+  color: #4996fc !important;
+}
+
+.nav-link::before{
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 0 !important;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav-link:hover::before{
+  width: 87%;
 }
 
 .navbar-toggler-icon {

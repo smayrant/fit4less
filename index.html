@@ -34,6 +34,9 @@
                             <a class="nav-link" href="#classes">Classes</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#bmi">BMI Calculator</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#memberships">Pricing</a>
                         </li>
                         <li class="nav-item">
@@ -48,18 +51,29 @@
     <section class="carousel-section mb-5">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active car-img">
+                <div class="carousel-item active darken-img">
                     <img class="d-block w-100" src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80"
                         alt="First slide">
-                    <div></div>
+                    <div class="carousel-text text-center">
+                        <h1 class="carousel-title font-weight-bold">Title goes right here</h1>
+                        <h6 class="carousel-subtitle">subtitle goes right here as well</h6>
+                    </div>
                 </div>
-                <div class="carousel-item car-img">
+                <div class="carousel-item darken-img">
                     <img class="d-block w-100" src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
                         alt="Second slide">
+                    <div class="carousel-text text-center">
+                        <h1 class="carousel-title font-weight-bold">Title goes right here</h1>
+                        <h6 class="carousel-subtitle">subtitle goes right here as well</h6>
+                    </div>
                 </div>
-                <div class="carousel-item car-img">
+                <div class="carousel-item darken-img">
                     <img class="d-block w-100" src="https://images.unsplash.com/photo-1517963628607-235ccdd5476c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2251&q=80"
                         alt="Third slide">
+                    <div class="carousel-text text-center">
+                        <h1 class="carousel-title font-weight-bold">Title goes right here</h1>
+                        <h6 class="carousel-subtitle">subtitle goes right here as well</h6>
+                    </div>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -75,41 +89,41 @@
     <section class="mt-5 mb-5 what-we-offer-section" id="offer-section">
         <div class="container">
             <div class="title text-center">
-                <h1>What Fit4Less Offers</h1>
+                <h1 class="dark-grey-text font-weight-bold">What Fit4Less Offers</h1>
                 <p>Care, Concern, and Quality Above All</p>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" src="<%= require('./src/assets/networking.png')%>" alt="parner logo">
-                    <h4 class="mt-3 font-weight-bold">Inclusivity</h4>
-                    <p class="offer-description">No judgements here, ever! Come as you are and exercise as you see fit!</p>
+                    <h4 class="mt-3 dark-grey-text font-weight-bold">Inclusivity</h4>
+                    <p class="offer-description grey-text">No judgements here, ever! Come as you are and exercise as you see fit!</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" style="height: 128px;" src="<%= require('./src/assets/coach.png')%>" alt="parner logo">
-                    <h4 class="mt-3 font-weight-bold">Encouragement</h4>
-                    <p class="offer-description">Fit4Less is here to provide positivity and encouragement to ensure that you reach your fitness goals.</p>
+                    <h4 class="mt-3 dark-grey-text font-weight-bold">Encouragement</h4>
+                    <p class="offer-description grey-text">Fit4Less is here to provide positivity and encouragement to ensure that you reach your fitness goals.</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" src="<%= require('./src/assets/laugh.png')%>" alt="parner logo">
-                    <h4 class="mt-3 font-weight-bold">Fun</h4>
-                    <p class="offer-description">We know fitness can seem a little serious at times but Fit4Less makes getting in shape fun! </p>
+                    <h4 class="mt-3 dark-grey-text font-weight-bold">Fun</h4>
+                    <p class="offer-description grey-text">We know fitness can seem a little serious at times but Fit4Less makes getting in shape fun! </p>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" src="<%= require('./src/assets/slim.png')%>" alt="parner logo">
-                    <h4 class="mt-3 font-weight-bold">Personal Training</h4>
-                    <p class="offer-description">No matter where you are in your fitness journey you'll receive a highly certified personal trainer to
+                    <h4 class="mt-3 dark-grey-text font-weight-bold">Personal Training</h4>
+                    <p class="offer-description grey-text">No matter where you are in your fitness journey you'll receive a highly certified personal trainer to
                         achieve your goals</p>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" src="<%= require('./src/assets/gym-machine.png')%>" alt="parner logo">
-                    <h4 class="mt-3 font-weight-bold">State-of-the-Art Equipment</h4>
-                    <p class="offer-description">Never worry about whether or not you're using the most advanced gym equipment available because at Fit4Less,
+                    <h4 class="mt-3 dark-grey-text font-weight-bold">State-of-the-Art Equipment</h4>
+                    <p class="offer-description grey-text">Never worry about whether or not you're using the most advanced gym equipment available because at Fit4Less,
                         you are. </p>
                 </div>
                 <div class="col-lg-4 col-md-6 mt-5 text-center">
                     <img class="img-fluid" style="height: 128px;" src="<%= require('./src/assets/shoes.png')%>" alt="parner logo">
                     <h4 class="mt-3 font-weight-bold">Group Exercise Classes</h4>
-                    <p class="offer-description">Enjoy a group of fitness classes centered around being convenient, engaging, and effective in helping
+                    <p class="offer-description grey-text">Enjoy a group of fitness classes centered around being convenient, engaging, and effective in helping
                         you reach your goals.</p>
                 </div>
             </div>
@@ -120,7 +134,7 @@
             <div class="row cta-row darken-img">
                 <div class="text-center text-white col-lg-12">
                     <h6 class="">Book an Appointment</h6>
-                    <h1 class="text-capitalize">get into shape now</h1>
+                    <h1 class="text-capitalize font-weight-bold">get into shape now</h1>
                     <button type="button" class="btn">Book Now</button>
                 </div>
             </div>
@@ -130,80 +144,55 @@
         <div class="container">
             <div class="row d-flex justify-content-center mb-5">
                 <div class="title text-center">
-                    <h1>Our Most Popular Classes</h1>
-                    <p class="text-capitalize">Come in and take one of our popular classes</p>
+                    <h1 class="font-weight-bold dark-grey-text">Our Most Popular Classes</h1>
+                    <p class="text-capitalize grey-text">Come in and take one of our popular classes</p>
                 </div>
             </div>
             <div class="row mb-5">
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img1.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img1.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status class-img">Currently Unavailable</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize">yoga classes</h5>
-                        <h5 class="class-price ml-auto">$35</h5>
-                    </div>
+                    <div class="class-status text-capitalize">yoga class - $35</div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img2.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img2.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status class-img">Class Available</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize">jazzercise classes</h5>
-                        <h5 class="class-price ml-auto">$25</h5>
-                    </div>
+                    <div class="class-status text-capitalize">jazzercise class - $25</div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img3.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img3.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status class-img">Class Available</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize">body strength classes</h5>
-                        <h5 class="class-price ml-auto">$25</h5>
-                    </div>
+                    <div class="class-status text-capitalize">body strength classes - $25</div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img4.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img4.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status bottom-class-status class-img">Class Available</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize">rowing classes</h5>
-                        <h5 class="class-price ml-auto">$30</h5>
-                    </div>
+                    <div class="class-status bottom-class-status text-capitalize">rowing classes - $30</div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img5.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img5.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status bottom-class-status class-img">Class Available</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize">aerobic classes</h5>
-                        <h5 class="class-price ml-auto">$30</h5>
-                    </div>
+                    <div class="class-status bottom-class-status text-capitalize">aerobic classes - $30</div>
                 </div>
                 <div class="col-lg-4 col-md-6 pb-5">
                     <div class="thumbnail">
-                        <img class="img-fluid" src="<%= require('./src/assets/class-img6.jpeg')%>" alt="class image">
+                        <img class="class-img img-fluid" src="<%= require('./src/assets/class-img6.jpeg')%>" alt="class image">
                     </div>
-                    <span class="class-status bottom-class-status class-img">Class Available</span>
-                    <div class="d-flex mt-2">
-                        <h5 class="text-capitalize class-text">sweat it out classes</h5>
-                        <h5 class="class-price  ml-auto">$30</h5>
-                    </div>
-                    <div></div>
+                    <div class="class-status bottom-class-status text-capitalize">sweat it out classes - $30</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bmi-section">
+    <section class="bmi-section" id="bmi">
         <div class="container bmi-container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="bmi-title text-capitalize">calculate your body mass index</h1>
+                    <h1 class="font-weight-bold bmi-title text-capitalize">calculate your body mass index</h1>
                 </div>
             </div>
             <div class="row mt-5 justify-content-center align-items-start">
@@ -224,7 +213,7 @@
                 <div class="col-lg-6 mb-1">
                     <form>
                         <div class="form-group">
-                            <input type="input" class="form-control bmi-output" aria-describedby="weight" placeholder="Your BMI">
+                            <input readonly type="text" class="form-control bmi-output" aria-describedby="weight" placeholder="Your BMI">
                         </div>
                     </form>
                 </div>
@@ -234,62 +223,65 @@
             </div>
         </div>
     </section>
-    <section class="mt-5 mb-5 membership-section" id="memberships">
+    <section class=" mb-5 membership-section" id="memberships">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="text-capitalize mb-5">membership pricing</h1>
+                    <h1 class="text-capitalize mb-5 font-weight-bold dark-grey-text">membership pricing</h1>
                 </div>
             </div>
-            <div class="row d-flex mx-auto justify-content-center">
+            <div class="row d-flex mx-auto text-center justify-content-center">
                 <div class="col-lg-4 mb-5">
-                    <div class="" style="min-height: 300px; max-width: 450px; margin: auto;">
+                    <div class="membership-container" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="header">
-                            <h4 class="mb-4">Basic Membership</h4>
+                            <h4 class="mb-4 pt-4">Basic Membership</h4>
                         </div>
                         <hr>
                         <div class="body">
-                            <h3 class="mt-4 mb-4 title">$15 Monthly</h3>
+                            <h3 class="mt-4 mb-4 membership-price font-weight-bold">$15 Monthly</h3>
                             <hr>
                             <ul class="mt-4 benefits-ul">
                                 <li>Unlimited Access to Our Club</li>
                                 <li>Free Wifi Access</li>
+                                <li>1 Free Class Session of Your Choice</li>
                                 <li>1 Free Personal Training Session</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-5">
-                    <div class="" style="min-height: 300px; max-width: 450px; margin: auto;">
+                    <div class="membership-container" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="header">
-                            <h4 class="mb-4">Premium Membership</h4>
+                            <h4 class="mb-4 pt-4">Premium Membership</h4>
                             <hr>
                         </div>
                         <div class="body">
-                            <h3 class="mt-4 mb-4 title">$25 Monthly</h3>
+                            <h3 class="mt-4 mb-4 membership-price font-weight-bold">$25 Monthly</h3>
                             <hr>
                             <ul class="mt-4 benefits-ul">
                                 <li>All Benefits of the Basic Membership</li>
                                 <li>Access to a Custom Workout App</li>
                                 <li>5 Free Personal Training Sessions</li>
+                                <li>Personalized Workout Plans</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 ">
-                    <div class="" style="min-height: 300px; max-width: 450px; margin: auto;">
+                    <div class="membership-container" style="min-height: 300px; max-width: 450px; margin: auto;">
                         <div class="header">
-                            <h4 class="mb-4">Ultimate membership</h4>
+                            <h4 class="mb-4 pt-4">Ultimate membership</h4>
                             <hr>
                         </div>
                         <div class="body">
-                            <h3 class="mt-4 mb-4 title">$35 Monthly</h3>
+                            <h3 class="mt-4 mb-4 membership-price font-weight-bold">$35 Monthly</h3>
                             <hr>
                             <ul class="mt-4 benefits-ul">
                                 <li>All Benefits of the Premium Membership</li>
                                 <li>Free Personalized Fitness Plan</li>
                                 <li>Extended Before and After Hours</li>
                                 <li>Bring a Guest Anytime</li>
+                                <li>Free Access to All Classes</li>
                             </ul>
                         </div>
                     </div>
@@ -301,7 +293,7 @@
         <div class="container">
             <div class="row mt-5 d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="text-capitalize">our featured partners</h1>
+                    <h1 class="text-capitalize font-weight-bold dark-grey-text">our featured partners</h1>
                 </div>
             </div>
             <div class="row mb-5 d-flex flex-wrap">
@@ -327,30 +319,30 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="text-capitalize">our experienced trainers</h1>
-                    <p class="mb-5 text-capitalize">choose from one of our highly knowledgeable trainers to help your fitness dreams come true</p>
+                    <h1 class="text-capitalize font-weight-bold dark-grey-text">our experienced trainers</h1>
+                    <p class="mb-5 text-capitalize grey-text">choose from one of our highly knowledgeable trainers to help your fitness dreams come true</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-5">
-                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo1.jpeg')%>" alt="class image">
-                    <h4 class="mt-2 font-weight-bold">Eric Michaels</h4>
-                    <p>Weight Training Instructor</p>
+                    <img class="trainer-img img-fluid" src="<%= require('./src/assets/trainer-photo1.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 dark-grey-text font-weight-bold">Eric Michaels</h4>
+                    <p class="grey-text">Weight Training Instructor</p>
                 </div>
                 <div class="col-lg-6 mb-5">
-                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo2.jpeg')%>" alt="class image">
-                    <h4 class="mt-2 font-weight-bold">Julio Dominguez</h4>
-                    <p>Boxing Instructor</p>
+                    <img class="trainer-img img-fluid" src="<%= require('./src/assets/trainer-photo2.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 dark-grey-text font-weight-bold">Julio Dominguez</h4>
+                    <p class="grey-text">Boxing Instructor</p>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo3.jpeg')%>" alt="class image">
-                    <h4 class="mt-2 font-weight-bold">Samantha Andrews</h4>
-                    <p>Body Weight Trainer</p>
+                    <img class="trainer-img img-fluid" src="<%= require('./src/assets/trainer-photo3.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 dark-grey-text font-weight-bold">Samantha Andrews</h4>
+                    <p class="grey-text">Body Weight Trainer</p>
                 </div>
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="<%= require('./src/assets/trainer-photo4.jpeg')%>" alt="class image">
-                    <h4 class="mt-2 font-weight-bold">Samuel Daniels</h4>
-                    <p>Cross Training Instructor</p>
+                    <img class="trainer-img img-fluid" src="<%= require('./src/assets/trainer-photo4.jpeg')%>" alt="class image">
+                    <h4 class="mt-2 dark-grey-text font-weight-bold">Samuel Daniels</h4>
+                    <p class="grey-text">Cross Training Instructor</p>
                 </div>
             </div>
         </div>
@@ -359,7 +351,7 @@
         <div class="container-fluid">
             <div class="row cta-row2 darken-img">
                 <div class="text-center text-white col-lg-12">
-                    <h1 class="mb-4">Join Us Today!</h1>
+                    <h1 class="mb-4 font-weight-bold">Join Us Today!</h1>
                     <button type="button" class="btn">Become a Member</button>
                 </div>
             </div>
