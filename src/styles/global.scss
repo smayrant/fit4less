@@ -1,5 +1,6 @@
 body{
     font-family: 'Roboto', sans-serif !important;
+    background-color: #f2f2f7;
 }
 
 .container{
@@ -9,9 +10,9 @@ body{
     }
 }
 
-// base colors
-$main-color: #224A82;
-$main-blue: #2c75d2;
+li{
+    list-style: none;
+}
 
 // stylings to darken the call to action and carousel images
 .darken-img{
@@ -28,6 +29,7 @@ $main-blue: #2c75d2;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
 }
 
+// global grey text styling
 .grey-text{
     color: #777777;
 }
@@ -35,3 +37,7 @@ $main-blue: #2c75d2;
 .dark-grey-text{
     color: #333333;
 }
+
+// base color variables
+$main-color: #224A82;
+$main-blue: #2c75d2;

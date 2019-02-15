@@ -3,6 +3,10 @@
 .bmi-section{
    background: $main-color;
    padding: 5em;
+
+   @media screen and (min-width: 992px){
+       padding: 9em;
+   }
 }
 
 .bmi-title{

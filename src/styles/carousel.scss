@@ -8,6 +8,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+
+    @media screen and (max-width: 600px){
+        font-size: .5em;
+    }
 }
 
 .carousel-title{
