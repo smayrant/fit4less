@@ -9,6 +9,10 @@
   font-size: 1.2em;
   margin-left: 2.5rem !important;
   position: relative;
+  
+  @media screen and(max-width: 1057px){
+    margin-left: 1.5rem !important;
+  }
 }
 
 .nav-link{

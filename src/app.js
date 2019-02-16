@@ -2,6 +2,38 @@ require('./styles/index.scss');
 
 import PopperJs from 'popper.js';
 import jquery from 'jquery';
+import jump from 'jump.js';
+
+// *** Logic for implementing the smooth scroll effect ***
+const offerLink = document.querySelector(".offer-link");
+
+offerLink.addEventListener("click", function () {
+    jump('#offer-section');
+})
+
+const classesLink = document.querySelector(".classes-link");
+
+classesLink.addEventListener("click", function () {
+    jump('#classes');
+})
+
+const bmiLink = document.querySelector(".bmi-link");
+
+bmiLink.addEventListener("click", function () {
+    jump('#bmi');
+})
+
+const pricingLink = document.querySelector(".pricing-link");
+
+pricingLink.addEventListener("click", function () {
+    jump('#memberships');
+})
+
+const trainerLink = document.querySelector(".trainers-link");
+
+trainerLink.addEventListener("click", function () {
+    jump('#trainers');
+})
 
 
 // *** Logic for creating a sticky navbar ***

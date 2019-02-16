@@ -9,8 +9,24 @@
     transform: translate(-50%, -50%);
     color: #fff;
 
-    @media screen and (max-width: 600px){
-        font-size: .5em;
+    @media screen and (max-width: 845px){
+        font-size: .7rem;
+    }
+
+    @media screen and (max-width: 735px){
+        font-size: .6rem;
+    }
+
+    @media screen and (max-width: 625px){
+        font-size: .5rem;
+    }
+
+    @media screen and (max-width: 500px){
+        font-size: .4rem;
+    }
+
+    @media screen and (max-width: 400px){
+        font-size: .3rem;
     }
 }
 
