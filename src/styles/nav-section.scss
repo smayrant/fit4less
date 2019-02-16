@@ -1,6 +1,7 @@
 @import "./global";
 
-.nav-section{
+.navbar{
+  width: 100%;
   background: $main-color;
 }
 
@@ -50,3 +51,8 @@
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 3px 21px -1px rgba(0,0,0,0.75);
+}

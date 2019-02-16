@@ -3,6 +3,28 @@ require('./styles/index.scss');
 import PopperJs from 'popper.js';
 import jquery from 'jquery';
 
+
+// *** Logic for creating a sticky navbar ***
+window.onscroll = function () {
+    addStickyClassToNavbar();
+}
+
+const navbar = document.querySelector(".navbar");
+
+const navbarOffsetPosition = navbar.offsetTop;
+
+function addStickyClassToNavbar() {
+    if (window.pageYOffset > navbarOffsetPosition) {
+        document.body.style.paddingTop = navbar.offsetHeight + 'px';
+        navbar.classList.add("sticky")
+    } else {
+        document.body.style.paddingTop = 0;
+        navbar.classList.remove("sticky")
+    }
+}
+
+// *** Logic for calculating the user's BMI ***
+
 // ensures only numbers can be entered into the input fields
 function isNumberKey(evt) {
     var charCode = (evt.which) ? evt.which : evt.keyCode;

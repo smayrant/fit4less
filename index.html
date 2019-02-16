@@ -16,40 +16,37 @@
 
 <body>
     <section class="nav-section">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand pl-5" href="#">
-                    <img class="logo" src="<%= require('./src/assets/running.png')%>" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ml-auto pr-5 text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#offer-section">What We Offer</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#classes">Classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#bmi">BMI Calculator</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#memberships">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#trainers">Trainers</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
+        <nav class="navbar sticky-top navbar-expand-lg">
+            <a class="navbar-brand pl-5" href="#">
+                <img class="logo" src="<%= require('./src/assets/running.png')%>" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ml-auto pr-5 text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link home-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link offer-link" href="#offer-section">What We Offer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link classes-link" href="#classes">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bmi-link" href="#bmi">BMI Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link pricing-link" href="#memberships">Pricing</a>
+                    </li>
+                    <li class="nav-item trainers-link">
+                        <a class="nav-link" href="#trainers">Trainers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </section>
     <section class="carousel-section mb-5">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -92,7 +89,7 @@
     <section class="mt-5 mb-5 what-we-offer-section" id="offer-section">
         <div class="container">
             <div class="title text-center">
-                <h1 class="dark-grey-text font-weight-bold">What Fit4Less Offers</h1>
+                <h1 class="dark-grey-text">What Fit4Less Offers</h1>
                 <p>Care, Concern, and Quality Above All</p>
             </div>
             <div class="row">
@@ -147,7 +144,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center mb-5">
                 <div class="title text-center">
-                    <h1 class="font-weight-bold mx-auto dark-grey-text">Our Most Popular Classes</h1>
+                    <h1 class="mx-auto dark-grey-text">Our Most Popular Classes</h1>
                     <p class="text-capitalize grey-text">Come in and take one of our popular classes</p>
                 </div>
             </div>
@@ -195,7 +192,7 @@
         <div class="container bmi-container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="font-weight-bold bmi-title text-capitalize">calculate your body mass index</h1>
+                    <h1 class="bmi-title text-capitalize">calculate your body mass index</h1>
                 </div>
             </div>
             <div class="row mt-5 justify-content-center align-items-start">
@@ -226,11 +223,11 @@
             </div>
         </div>
     </section>
-    <section class=" mb-5 membership-section" id="memberships">
+    <section class="mb-5 membership-section" id="memberships">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="text-capitalize mb-5 font-weight-bold dark-grey-text">membership pricing</h1>
+                    <h1 class="text-capitalize mb-5  dark-grey-text">membership pricing</h1>
                 </div>
             </div>
             <div class="row d-flex mx-auto text-center justify-content-center">
@@ -307,7 +304,7 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="pt-5 trainer-heading text-capitalize font-weight-bold dark-grey-text">our experienced trainers</h1>
+                    <h1 class="pt-5 trainer-heading text-capitalize  dark-grey-text">our experienced trainers</h1>
                     <p class="mb-5 mx-auto trainer-subtitle text-capitalize grey-text">choose from one of our highly knowledgeable trainers to help your fitness dreams come true</p>
                 </div>
             </div>
@@ -340,7 +337,7 @@
             </div>
         </div>
     </section>
-    <section class="cta-section2 mt-5">
+    <section class="cta-section2 mt-5 mb-5">
         <div class="container-fluid">
             <div class="row cta-row2 darken-img">
                 <div class="text-center text-white col-lg-12">
@@ -350,11 +347,11 @@
             </div>
         </div>
     </section>
-    <section class="partnership-section">
+    <section class="partnership-section mt-5 mb-5 pt-5 pb-5">
         <div class="container">
             <div class="row mt-5 d-flex justify-content-center">
                 <div class="title text-center">
-                    <h1 class="mb-5 text-capitalize font-weight-bold dark-grey-text">our featured partners</h1>
+                    <h1 class="mb-5 text-capitalize dark-grey-text">our featured partners</h1>
                 </div>
             </div>
             <div class="partner-img-container row mb-5 d-flex justify-content-center flex-wrap">
