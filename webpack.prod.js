@@ -1,7 +1,5 @@
 const path = require('path');
-
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-const CleanWebpackPlugin = require('clean-webpack-plugin'); //installed via npm
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
@@ -10,7 +8,7 @@ const buildPath = path.resolve(__dirname, 'dist');
 
 module.exports = {
     devtool: 'source-map',
-    entry: './src/index.js',
+    entry: './src/app.js',
     output: {
         filename: '[name].[hash:20].js',
         path: buildPath
@@ -62,7 +60,7 @@ module.exports = {
             },
             {
                 // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|jpeg)$/,
                 use: [
                     {
                         loader: 'url-loader',
@@ -81,10 +79,9 @@ module.exports = {
             // Inject the js bundle at the end of the body of the given template
             inject: 'body',
         }),
-        new CleanWebpackPlugin(buildPath),
         new FaviconsWebpackPlugin({
-            // Your source logo
-            logo: './src/assets/icon.png',
+            // Source logo
+            logo: './src/assets/running.png',
             // The prefix for all image files (might be a folder or a name)
             prefix: 'icons-[hash]/',
             // Generate a cache file with control hashes and
