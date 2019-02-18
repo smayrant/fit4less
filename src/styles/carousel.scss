@@ -8,6 +8,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
+    font-size: 1rem;
+
+    @media screen and (min-width: 2000px){
+        font-size: 1.25rem;
+    }
+
+    @media screen and (min-width: 2400px){
+        font-size: 1.7rem;
+    }
 
     @media screen and (max-width: 845px){
         font-size: .7rem;
@@ -32,8 +41,10 @@
 
 .carousel-title{
     font-size: 5.5em;
+    font-weight: 600;
 }
 
 .carousel-subtitle{
     font-size: 1.5em;
+    font-weight: 300;
 }
