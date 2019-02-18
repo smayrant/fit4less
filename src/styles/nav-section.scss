@@ -38,6 +38,10 @@
 
 .nav-link:hover::before{
   width: 87%;
+
+  @media screen and (max-width: 992px){
+    width: 10%;
+  }
 }
 
 .navbar-toggler-icon {
