@@ -1,6 +1,7 @@
 // base color variables
 $main-color: #224A82;
 $main-blue: #2c75d2;
+
 body{
     font-family: 'Roboto', sans-serif !important;
     background-color: #eaf0f7;
@@ -66,6 +67,15 @@ h1{
     transform: scale(1.05);
     will-change: transform;
   }
+}
+
+// scale on hover styling 
+.grow { 
+    transition: all .3s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1); 
 }
 
 // stylings to darken the call to action and carousel images
