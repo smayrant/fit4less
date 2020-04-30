@@ -22,7 +22,7 @@
     "homepage": "",
     "dependencies": {
         "bootstrap": "^4.2.1",
-        "jquery": "^3.3.1",
+        "jquery": "^3.5.0",
         "jump.js": "^1.0.2",
         "normalize.css": "^8.0.0",
         "popper.js": "^1.14.6"
